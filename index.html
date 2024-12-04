@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF.Stats | Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"></div>
+        <div class="time-filters">
+            <button class="time-btn" data-time="1h">1H</button>
+            <button class="time-btn active" data-time="24h">24H</button>
+            <button class="time-btn" data-time="7d">7D</button>
+            <button class="time-btn" data-time="30d">30D</button>
+        </div>
+        <div class="social-buttons">
+            <a href="https://x.com" target="_blank" class="social-btn twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://t.me" target="_blank" class="social-btn telegram">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://pump.fun/board" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="header-content">
+            <h1 class="header-title">PF.Stats</h1>
+            <div class="search-container">
+                <!-- ... existing search content ... -->
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="metric-card">
+            <h3>Volume</h3>
+            <div class="metric-value">$1.2M</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change positive">+12.5%</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>Average Market Cap</h3>
+            <div class="metric-value">$850K</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change positive">+8.3%</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>Buy Volume</h3>
+            <div class="metric-value">$725K</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change positive">+15.2%</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>Sell Volume</h3>
+            <div class="metric-value">$475K</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change negative">-5.7%</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>New Tokens</h3>
+            <div class="metric-value">142</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change positive">+23.5%</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>Active Wallets</h3>
+            <div class="metric-value">3,847</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change positive">+11.2%</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>KOTH Tokens</h3>
+            <div class="metric-value">28</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change positive">+16.7%</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>Raydium Listings</h3>
+            <div class="metric-value">15</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change positive">+25.0%</div>
+        </div>
+
+        <div class="metric-card">
+            <h3>99th Percentile ROI</h3>
+            <div class="metric-value">+432%</div>
+            <div class="chart-container">
+                <canvas class="mini-chart"></canvas>
+            </div>
+            <div class="change positive">+5.8%</div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
